@@ -25,6 +25,8 @@ int main() {
     dash = '_'; // calls the copy assignment
     // dash set to underline ('_')
     dash(30) << endl;
+    dash = '&';
+    dash(30) << endl;
     return 0;
 }
 
