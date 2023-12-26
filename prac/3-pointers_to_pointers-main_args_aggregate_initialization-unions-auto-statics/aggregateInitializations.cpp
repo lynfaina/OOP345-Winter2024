@@ -10,6 +10,10 @@ int main() {
     cout << a << endl;
     cout << b << endl;
 
+    // added tests
+    cout << c[1] << endl; // 0
+    cout << d[3] << endl; // 0
+
     return 0;
 }
 

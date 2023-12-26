@@ -39,5 +39,17 @@ class Person {
     Title tlt;
     // Person marriedTo; like forward declaration only pointers and refs are allowed
 public:
-    Person(string first, string last, Title tlt):name{first, last}, title(tlt){}
+    Person(string first, string last, Title tlt):name{first, last}, tlt(tlt){}
 };
+
+
+// added for testing
+int main() {
+    // Example usage
+    Title title("Duke");
+    Person person("John", "Doe", title);
+
+    // Do something with title and person...
+
+    return 0;
+}

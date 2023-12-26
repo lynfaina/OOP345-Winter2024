@@ -22,6 +22,16 @@ int main() {
     taxValue() = 0.13; // taxValue is in the left side
     cout << tax << endl;
     cout << taxValue() << endl;
+
+
+    // added tests
+    cout << i << endl;
+    cout << *p << endl;
+    // the value of i and p are 10 because 
+    // p is a copy of i and i was assigned to value()
+    // and value() returns 10
+
+    return 0;
 }
 
 // taxValue() is the temporary value therefore it is in the right side

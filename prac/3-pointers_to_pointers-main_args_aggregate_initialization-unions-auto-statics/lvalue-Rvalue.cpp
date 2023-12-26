@@ -71,15 +71,17 @@ int main () {
     // Name C = "John"; the same with this from Name A = "Jack" (lvalue)
     cout << "After Name Creations!" << endl;
 
-    cout << A << endl; // displays Jack
-    cout << B << endl; // displays copied Jack
+    cout << A << endl; // displays Jack // A is a lvalue, Jack is an prvalue
+    cout << B << endl; // displays copied Jack // B is a lvalue, Jack is an prvalue
+    cout << C << endl; // displays John // C is a lvalue, John is an prvalue
+    cout << Name("John") << endl; // displays John // xvalue
     // L value can stands on both sides
     // R value can only stand on the right side
-    cout << Name("Nicole") << endl; // calls the R value because its a nameless object
+    cout << Name("Nicole") << endl; // calls the R value because its a nameless object // xvalue
     // it doesn't have any reference attached to it
     // displays Nicole
 
-    prnName(Name("Yonghoon")); // prnName(Name N = Name("Yonghoon"));
+    prnName(Name("Yonghoon")); // prnName(Name N = Name("Yonghoon")); // prnName is an lvalue, Yonghoon is xvalue
     // this will be the same as Name C = Name("John");
     // temporary nameless object gets created
     // being passed by value to prnName means the copy constructor
