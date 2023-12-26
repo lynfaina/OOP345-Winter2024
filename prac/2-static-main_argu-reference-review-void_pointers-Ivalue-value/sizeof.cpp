@@ -40,3 +40,14 @@ int main() {
     cout << "size of test3 " << sizeof(test3) << endl;          // 16
     return 0;
 }
+
+
+// 1 byte = 8 bits
+// char = 1 byte
+// int = 4 bytes
+// float = 4 bytes
+// double = 8 bytes
+// short int = 2 bytes
+// long int = 4 bytes
+// long long int = 8 bytes
+// long double = 8 bytes

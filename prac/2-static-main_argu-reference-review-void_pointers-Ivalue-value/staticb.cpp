@@ -42,6 +42,23 @@ int main()  {
     delete p;
     C[1].display();
     cout << Container::noOfInstances() << endl;
+
+
+    // added tests
+    p = new Container(50); 
+    p->display(); // output: 50 (4)
+    p = new Container(60);
+    p->display(); // output: 60 (5)
+    p = new Container(70);
+    p->display(); // output: 70 (6)
+    delete p; // deletes the Container* p and all the contents on it
+    cout << p << endl; // its pointing to nothing
+    p->display(); // address of p and the current m_cnt
+    // 2016165712 (5)
+    // 5 because delete p decrements m_cnt in line 52
+    // this test is to check if delete p will delete only one new Container
+    // but it deletes all the new created Containers
+
     return 0;
 }
 
@@ -61,6 +78,6 @@ int main()  {
 // left is a scope resolution
 // left is the static variable inside the ios class
 // accessible by all instances of ios
-// therefore when you set it to left, everyday shares the left on the ostream
+// therefore when you set it to left, everything shares the left on the ostream
 
 // scope resolutions are class variable, they are static variables
