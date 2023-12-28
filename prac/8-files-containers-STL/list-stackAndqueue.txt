@@ -1,0 +1,63 @@
+// standard template library
+
+// stack
+    // combination of two classes working together
+    // stack is a class, it has pointer called top, depth
+    // a stack has series of nodes
+    // a node has two parts: data - which a type of any data that
+    // you are holding in it, could be integer, cstring, cars, employees, etc.
+    // : next - is a pointer of type. it points to the next node 
+    // top is a pointer to a node
+        // it looks like the top is pointing to the node and then next is pointing to the next node
+        // and so forth, and the last one hits the null pointer
+    // the whole idea of stack is that always the only thing that you have
+    // available at on hand is the top value, you do not have the old ones
+    // you don't need to actually see the old ones
+    // if you need the old ones, you have to remove the top one, get the data do'
+    // whatever you are doing and then you have the next one
+
+    // empty stack
+        // an empty stack by default looks like: it has a depth of 0 and the top pointer
+        // that is supposed to point to a node is actually a null
+    // and you actually push a value into it
+    // as soon as you push one value to it, the value goes into data and the next of that one,
+    // it becomes null, and then you push another value, that goes on the top and replaces
+    // the next one
+    // what pop does, it pops the last one and goes back
+    // you always have access to the value that is at the top
+    // every node has a piece of data, for every single push that you do, one node is added
+    // to the stack and always top points to the last thing that you pushed
+    // when you pop the top node up, it literally returns the value of the top node to you
+    // and goes back up to what it was before, and then goes back to the previous one
+    // stack is First In Last Out
+    // a stack is the most common used link list in the operating system
+
+
+
+// queue
+    // a queue's node usually has a next pointer and a previous pointer
+    // it knows where's the head of a queue, where is the tail, which one
+    // that were dealing currently, and what is the size of the queue
+    // the head points to the first node
+    // the tail points to the last node
+    // the size of the queue is the number of nodes in the queue
+    // from that, you can go next next next and if you go to the next one,
+    // you can go back to the previous one
+
+    // empty queue
+        // size = 0
+        // head = null
+        // tail = null
+        // current = null
+    // a single one is created, everything is pointing to the single one 
+    // and when its many, then you can actually Traverse to it
+    // you start from the beginning, go to next, and next, and 
+    // until it hits the last one
+    // and you can go backward and forward in it
+    // double link list
+
+
+
+
+// watch https://youtu.be/mwKTSzNElkk?si=CE7xbIifNg9PWy4o&t=766 (12:46 - 24:13)
+// for more details about stack and queue
