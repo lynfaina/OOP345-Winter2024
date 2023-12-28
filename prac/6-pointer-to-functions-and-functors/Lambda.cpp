@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// test lambda
 // Lambda Expressions
 // something like functors
 // auto

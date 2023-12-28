@@ -1,5 +1,9 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "iostream": "cpp"
+=======
+        "deque": "cpp"
+>>>>>>> 59a2067cb00ba64b68464cb74b03fdc883008ab9
     }
 }
